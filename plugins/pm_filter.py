@@ -92,7 +92,7 @@ async def pm_spoll_tester(bot, query):
         await pm_AutoFilter(bot, query, k)
     else:
         k = await query.message.edit('Tʜɪs Mᴏᴠɪᴇ Nᴏᴛ Fᴏᴜɴᴅ Iɴ Dᴀᴛᴀʙᴀsᴇ')
-        await asyncio.sleep(60)
+        await asyncio.sleep(1)
         await k.delete()
 
 
