@@ -92,7 +92,7 @@ async def pm_spoll_tester(bot, query):
         await pm_AutoFilter(bot, query, k)
     else:
         k = await query.message.edit('Tʜɪs Mᴏᴠɪᴇ Nᴏᴛ Fᴏᴜɴᴅ Iɴ Dᴀᴛᴀʙᴀsᴇ')
-        await asyncio.sleep(1)
+        await asyncio.sleep(10)
         await k.delete()
 
 
@@ -232,7 +232,7 @@ async def pm_spoll_choker(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         k = await msg.reply("I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏᴛʜɪɴɢ Rᴇʟᴀᴛᴇᴅ Tᴏ Tʜᴀᴛ. Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ", quote=True)
-        await asyncio.sleep(60)
+        await asyncio.sleep(10)
         return await k.delete()
     temp.PM_SPELL[str(msg.id)] = movielist
     btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"pmspolling#{user}#{k}")] for k, movie in enumerate(movielist)]
