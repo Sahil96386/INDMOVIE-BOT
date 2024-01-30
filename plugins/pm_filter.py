@@ -210,7 +210,7 @@ async def pm_spoll_choker(msg):
     gs_parsed = []
     if not g_s:
         k = await msg.reply("I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏ Mᴏᴠɪᴇ Iɴ Tʜᴀᴛ Nᴀᴍᴇ", quote=True)
-        await asyncio.sleep(10)
+        await asyncio.sleep(1)
         return await k.delete()
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
     gs = list(filter(regex.match, g_s))
