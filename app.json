@@ -40,7 +40,7 @@
         },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
-            "required": false
+            "required": true
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
@@ -127,7 +127,7 @@
         "WELCOM_TEXT": {
             "description": "your group welcome text keyword({user} = joined use & {chat} = your chat name",
             "value": "Hᴇʏ {user} 💞\nWᴇʟᴄᴏᴍᴇ ᴛᴏ {chat}.\n\nꜱʜᴀʀᴇ & ꜱᴜᴩᴩᴏʀᴛ, ʀᴇqᴜᴇꜱᴛ ʏᴏᴜ ᴡᴀɴᴛᴇᴅ ᴍᴏᴠɪᴇꜱ",
-            "required": false
+            "required": true
         },
         "BUTTON_LOCK_TEXT": {
             "description": "button lock text [User = {query}]",
