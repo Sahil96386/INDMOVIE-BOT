@@ -11,6 +11,9 @@ from database.users_chats_db import db
 from database.ia_filterdb import Media, get_file_details, get_search_results
 from plugins.group_filter import global_filters
 
+from util.human_readable import humanbytes
+from urllib.parse import quote_plus
+from util.file_properties import get_name, get_hash, get_media_file_size
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
@@ -94,6 +97,9 @@ async def pm_spoll_tester(bot, query):
         k = await query.message.edit('Tʜɪs Mᴏᴠɪᴇ Nᴏᴛ Fᴏᴜɴᴅ Iɴ Dᴀᴛᴀʙᴀsᴇ')
         await asyncio.sleep(10)
         await k.delete()
+
+    elif data.startswith("generate_stream_link"):
+        _, file_id = data.split(":")
 
 
 async def pm_AutoFilter(client, msg, pmspoll=False):    
