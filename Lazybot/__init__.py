@@ -33,13 +33,13 @@ from info import *
 class LazyPrincessXBot(Client):
     def __init__(self):
         super().__init__(
-            name=SESSION,
+            name="Professor-Bot",
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
-            workers=50,
+            workers=200,
             plugins={"root": "plugins"},
-            sleep_threshold=5,
+            sleep_threshold=10,
         )
     async def iter_messages(
         self,
