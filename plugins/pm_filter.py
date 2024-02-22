@@ -72,7 +72,7 @@ async def pm_next_page(bot, query):
             InlineKeyboardButton(f"❄️ {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
             InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data=f"pmnext_{req}_{key}_{n_offset}")
         ])
-        elif data.startswith("generate_stream_link"):
+    elif data.startswith("generate_stream_link"):
         _, file_id = data.split(":")    
     try:
         await query.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(btn))
