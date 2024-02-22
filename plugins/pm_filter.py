@@ -97,8 +97,6 @@ async def pm_spoll_tester(bot, query):
         k = await query.message.edit('Tʜɪs Mᴏᴠɪᴇ Nᴏᴛ Fᴏᴜɴᴅ Iɴ Dᴀᴛᴀʙᴀsᴇ')
         await asyncio.sleep(10)
         await k.delete()
-    elif data.startswith("generate_stream_link"):
-        _, file_id = data.split(":")
 
 
 async def pm_AutoFilter(client, msg, pmspoll=False):    
