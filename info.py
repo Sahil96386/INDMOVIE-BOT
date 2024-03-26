@@ -65,9 +65,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://{}/".format(FQDN)
+    URL = "https://{https://charmeleon-bot-indmovie-bot.koyeb.app/}/".format(FQDN)
 else:
-    URL = "http://{}/".format(FQDN)
+    URL = "http://{https://charmeleon-bot-indmovie-bot.koyeb.app/}/".format(FQDN)
 REPO_OWNER = "LazyDeveloperr"
 
 # Filters Configuration 
