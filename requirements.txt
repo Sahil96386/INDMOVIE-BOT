@@ -13,16 +13,6 @@ marshmallow==3.20.1
 umongo==3.1.0
 motor==3.0.0
 
-#Online Stream & Download
-
-jinja2
-python-dotenv<=0.20.0
-apscheduler
-pyshorteners
-psutil
-pyromod
-colorama
-
 #---ytdl----#
 youtube-search-python
 youtube-search
