@@ -96,7 +96,7 @@ async def pm_spoll_tester(bot, query):
         await k.delete()
 
 
-async def pm_AutoFilter(client, msg, pmspoll=False):    
+async def pm_AutoFilter(client, msg, pmspoll=True):    
     if not pmspoll:
         message = msg   
         if message.text.startswith("/"): return  # ignore commands
